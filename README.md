@@ -24,15 +24,6 @@ You may also add exercises to existing workout plans to help you reach your goal
 
 &nbsp;
 
-## Table of Contents
-
-- [Installation](#installation)
-- [Questions](#questions)
-
-&nbsp;
-
-&nbsp;
-
 ## Installation:
 
 1. Open your integrated terminal in the applications root directory.

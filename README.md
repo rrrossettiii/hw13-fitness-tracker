@@ -29,7 +29,7 @@ You may also add exercises to existing workout plans to help you reach your goal
 1. Open your integrated terminal in the applications root directory.
 2. Run "npm i" to install all required node modules.
 3. To start server run "npm start".
-4. Ctrl click the link inthe console "http://localhost:xxxx" or paste it in your browser.
+4. Ctrl click the link in the console "http://localhost:xxxx" or paste it in your browser.
 5. Begin tracking!
 
 &nbsp;

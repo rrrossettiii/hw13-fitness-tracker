@@ -5,7 +5,7 @@ const logger = require("morgan");
 const mongoose = require("mongoose");
 
 // Express;
-// =============: - 
+// =============: -
 const PORT = process.env.PORT || 3000;
 const app = express();
 // - data parser;
@@ -24,6 +24,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness", {
 // Routes;
 // =============:
 app.use(require("./routes/Views.js"));
+app.use(require("./routes/API.js"));
 
 // Server Listener;
 // =============: - Launch Server;

@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-  day: {
+  name: {
     type: Date,
-    uniqui
+    unique: true
   }
 });

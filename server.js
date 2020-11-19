@@ -8,11 +8,12 @@ const mongoose = require("mongoose");
 // =============: -
 const PORT = process.env.PORT || 3000;
 const app = express();
-// - data parser;
+// - "morgan" server logger;
 app.use(logger("dev"));
+// - Data Parsing;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-// - set static files in /public;
+// - Static Directory;
 app.use(express.static("public"));
 
 // Mongoose;
@@ -22,9 +23,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness", {
 });
 
 // Routes;
-// =============:
-app.use(require("./routes/Views.js"));
-app.use(require("./routes/API.js"));
+// =============: - View html; Create, Read, Update, Delete;
+app.use(require("./routes/view.js"));
+app.use(require("./routes/crud.js"));
 
 // Server Listener;
 // =============: - Launch Server;

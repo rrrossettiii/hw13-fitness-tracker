@@ -4,7 +4,17 @@ const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
   name: {
-    type: Date,
+    type: String,
     unique: true
-  }
+  },
+  workouts: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Fitness"
+    }
+  ]
 });
+
+const User = mongoose.model("User", UserSchema);
+
+module.exports = User;

@@ -20,3 +20,11 @@ app.use(express.static("public"));
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness", {
   useNewUrlParser: true
 });
+
+app.listen(PORT, () => {
+  console.log(
+    "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+    PORT,
+    PORT
+  );
+});

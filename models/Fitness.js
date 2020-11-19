@@ -7,10 +7,10 @@ const FitnessSchema = new Schema({
     type: Date,
     unique: true
   },
-  exercises: [
+  exercise: [
     {
       type: Schema.Types.ObjectId,
-      ref: "Fitness"
+      ref: "Exercise"
     }
   ]
 });

@@ -19,7 +19,10 @@ app.use(express.static("public"));
 // Mongoose;
 // =============: - Database Modeler/Validator;
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/fitness", {
-	useNewUrlParser: true
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+	useCreateIndex: true,
+	useFindAndModify: false
 });
 
 // Routes;
